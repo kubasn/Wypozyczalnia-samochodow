@@ -199,7 +199,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    width:100%;
+    width:100vw;
     top:10%;
     z-index:-1;
 }
@@ -263,8 +263,9 @@ footer img{
     transform: translate(-50%,-50%);
     width:50%;
     box-shadow: 0 2px 4px var(--blue);
-    min-height: 40%;
-    padding:50px;
+    /* min-height: 40%; */
+    padding:10px;
+    margin-top:70px;
 }
 .login-box h1{
     text-align: center;
@@ -328,7 +329,8 @@ input:-webkit-autofill:active  {
 }
 
 .car{
-    margin-bottom:80px;
+    position: relative;
+    margin:40px 0;
     display: flex;
     width:100%;
     padding:15px 60px;
@@ -358,4 +360,54 @@ input:-webkit-autofill:active  {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.orderForm{
+    background-color: rgba(40,86,184,0.1);
+    padding:20px;
+    width:100%;
+    border-radius: 10px;
+    transition: all .5s;
+    display: none;
+    opacity:0;
+    transition: all 1s;
+}
+.orderForm h1{
+    text-align: center;
+}
+.payment{
+    display: flex;
+    width:60%;
+    margin:10px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.booking{
+    width:60%;
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+select[name=kind]{
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    outline:none;
+}
+.cost{
+    display:flex;
+    width:100%;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:20px 0;
+}
+.totalCost{
+    font-size:30px;
+}
+.active{
+    /* transform: translateX(-100%); */
+    display: block;
+}
+.active-opacity{
+    opacity:1;
 }

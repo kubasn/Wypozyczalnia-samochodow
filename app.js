@@ -102,9 +102,27 @@ const animationUnderline = ()=>{
     });
 };
 
+const orderToggle = ()=>{
+    const adverts = document.querySelectorAll('.car');
+    adverts.forEach(advert=>{
+        advert.addEventListener('click',(e)=>{
+            const btn = advert.querySelector('.toggle-order');
+            if(e.target == btn){
+                const orderForm = advert.querySelector('.orderForm');
+                orderForm.classList.toggle('active');
+                setTimeout(() => {
+                    orderForm.classList.toggle('active-opacity');
+                    
+                }, 0);
+            }
+        })
+    })
+}
+
 
 window.addEventListener('DOMContentLoaded', ()=>{
     animationUnderline();
     buttonTop();
     animationsSection();
+    orderToggle();
 })

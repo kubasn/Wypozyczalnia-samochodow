@@ -9,7 +9,7 @@
     <title>Search</title>
 </head>
 <body>
-    
+
     <header>
         <nav>
             <a href="./home.html">Home</a>
@@ -132,7 +132,7 @@
                 </clipPath>
                 </defs>
             </svg>
-                
+
         </div>
     </header>
 
@@ -146,7 +146,7 @@
                     <input type="text" placeholder="Search model...">
                 </div>
 
-                
+
                 <div class="place">
                     <h2>WHERE YOU FROM</h2>
                     <input type="text" placeholder="Type your location...">
@@ -177,37 +177,118 @@
                             <span>150$/day</span>
                         </div>
                     </div>
-                    <button class="button">Order</button>
+                    <div class="button toggle-order">Order</div>
                 </div>
-            </div>
 
-            <div class="car">
-                <h1>Ford Taurus</h1>
-                <div class="car-detail">
-                    <div class="persons">
-                        <img src="./img/user.svg" alt="">
-                        <span>5</span>
-                    </div>
-                    <div class="air-cond">
-                        <img src="./img/snow.svg" alt="">
-                        <span>A/C</span>
-                    </div>
-                    <div class="cash">
-                        <img src="./img/money.svg" alt="">
-                        <div class="cash-detail">
-                            <span>30$/h</span>
-                            <span>150$/day</span>
+            
+                    <div class="orderForm">
+                        
+                        <h1>Order form</h1>
+                        <div class="formField">
+                            <p>Email</p>
+                            <input type="email">
+                        </div>
+
+                        <div class="formField">
+                            <p>Password</p>
+                            <input type="password">
+                        </div>
+
+                        <div class="payment " >
+                            <label><input type="radio" name="payment" value="cash" checked>Cash</label>
+            
+                            <label><input type="radio" name="payment"  value="transfer">Bank Transfer</label>
+                        </div>
+
+                        <div class="booking formField">
+                            <input type="text" name="date" placeholder="Start of booking:" required onfocus="(this.type='date')" >
+                        </div>
+
+                        <div class="calculator formField">
+                            <div>
+                                <select name="kind" id="" >
+                                    <option value="days" selected>For days</option>
+                                    <option value="hours" >For hours</option>
+                                
+                                </select>
+                                <input type="number" id="time" name="time" placeholder="Type number of days or hours" min="1" step='1' required value={{time}}>
+                            </div>
+                            
+                            <div class="cost">
+                                <div class="button btn-calculate">Calculate</div>
+                                <div class="totalCost"><span>50</span>PLN</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="button">Order</div>
                 </div>
-            </div>
-
-        </div>
 
 
-    </div> 
+                <div class="car">
+                    <h1>Ford Taurus</h1>
+                    <div class="car-detail">
+                        <div class="persons">
+                            <img src="./img/user.svg" alt="">
+                            <span>5</span>
+                        </div>
+                        <div class="air-cond">
+                            <img src="./img/snow.svg" alt="">
+                            <span>A/C</span>
+                        </div>
+                        <div class="cash">
+                            <img src="./img/money.svg" alt="">
+                            <div class="cash-detail">
+                                <span>30$/h</span>
+                                <span>150$/day</span>
+                            </div>
+                        </div>
+                        <div class="button toggle-order">Order</div>
+                    </div>
     
+                
+                        <div class="orderForm">
+                            
+                            <h1>Order form</h1>
+                            <div class="formField">
+                                <p>Email</p>
+                                <input type="email">
+                            </div>
+    
+                            <div class="formField">
+                                <p>Password</p>
+                                <input type="password">
+                            </div>
+    
+                            <div class="payment " >
+                                <label><input type="radio" name="payment" value="cash" checked>Cash</label>
+                
+                                <label><input type="radio" name="payment"  value="transfer">Bank Transfer</label>
+                            </div>
+    
+                            <div class="booking formField">
+                                <input type="text" name="date" placeholder="Start of booking:" required onfocus="(this.type='date')" >
+                            </div>
+    
+                            <div class="calculator formField">
+                                <div>
+                                    <select name="kind" id="" >
+                                        <option value="days" selected>For days</option>
+                                        <option value="hours" >For hours</option>
+                                    
+                                    </select>
+                                    <input type="number" id="time" name="time" placeholder="Type number of days or hours" min="1" step='1' required value={{time}}>
+                                </div>
+                                
+                                <div class="cost">
+                                    <div class="button btn-calculate">Calculate</div>
+                                    <div class="totalCost"><span>50</span>PLN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+    </div>
+
     <footer>
         <div class="number-contact">
             <img src="./img/phone.svg" alt="">
